@@ -10,9 +10,9 @@ font-family: 'Merriweather', serif; */
 body{
     width: 100vw;
     height: 100vh;
+    overflow: hidden;
 }
 .conteinerImg{
-    border: 1px solid red;
     width: 50%;
     text-align: center;
     margin: auto;
@@ -26,21 +26,18 @@ body{
     max-width: 1440px;
     width: 90%;
     height: 99vh;
-    border: 1px solid red;
-    margin: auto;
-   
+    margin: auto; 
 }
 .conteudoLogin{
     width: 50%;
-    border: 1px solid red;
     margin: auto;
 }
 .loginAuto{
     max-width: 400px;
     width: 90%;
     height: 600px;
-    border: 1px solid red;
     margin: auto;
+    position: relative;
 }
 /* login */
 .loginAuto .text {
@@ -61,7 +58,6 @@ body{
 .loginAuto .text h1{
     font-weight: 700;
     font-size: 26px;
-
 }
 form p{
     font-family: 'Lato', sans-serif;
@@ -88,4 +84,51 @@ form .acoes .check_login {
 form .acoes .check_login > p{
     margin: 0px;
     padding: 0 10px;
+}
+button{
+    max-width: 347px;
+    width: 100%;
+    height: 50px;
+    border-radius: 5px;
+    border: none;
+    color: white;
+    font-family: 'Lato', sans-serif;
+    font-weight: 700;
+    font-size: 16px;
+    position: relative;
+    cursor: pointer;
+    
+}
+#btn_1{
+    background-color: #04C35C;
+}
+#btn_2{
+    margin-top: 15px;
+    background-color: #1A202C;
+}
+.cadastre_link{
+    position: absolute;
+    bottom: 3%;
+    right: 20%;
+}
+.icone_g{
+  padding-right: 10px;
+  display: inline-block;
+}
+
+
+@media(max-width:970px){
+    .conteinerImg{
+        display: none;
+    }
+    .conteinerLogin {
+        display: flex;
+        width: 100%;
+        margin: auto;
+    }
+    .conteudoLogin{
+        width: 100%;
+        margin: auto;
+        border: 1px solid red;
+    }
 }
