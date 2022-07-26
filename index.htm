@@ -24,32 +24,45 @@
                         <p>Bem vindo de volta</p>
                         <h1>Faça login na sua conta</h1>
                     </div>
-                    <form>
 
-                        <p>E-mail</p>
-                        <input class="input_login" type="email">
-                        <p>Senha</p>
-                        <input class="input_login" type="password">
-                    
+                    <form action="#" method="GET">
+
+                        <label>
+                            E-mail:
+                            <input class="input_login" type="email" name="email">
+                        </label>
+
+
+                        <label>
+                            Senha:
+                            <input class="input_login" type="password" name="senha">
+                        </label>
+
                         <div class="acoes">
-
                             <div class="check_login">
-                                <input type="radio" >
-                                <p>Lembre de mim </p>
+                                <label>
+                                    <input type="checkbox" >
+                                    Lembre de mim 
+                                </label>
+                                
                             </div>
-                            
+
                             <a href="#">Esqueceu sua senha? </a>
                         </div>
-                        <div class="bnts">
-                            <a href="#"><button id="btn_1">Entrar</button></a>
-                            <a href="#"><button id="btn_2"> <img class="icone_g" src="img/iconfinder_Google_1298745 1.svg" alt="Icone do goolge">Ou faça login com o Google   </button></a>
-                            
 
+                        <button id="btn_1">Entrar</button>
+
+                        <div class="cadastrar">
+                            <a href="#" target="_blank">
+                                <button id="btn_2"> <img class="icone_g" src="img/iconfinder_Google_1298745 1.svg" alt="Icone do goolge">Ou faça login com o Google  </button>
+                            </a>
                         </div>
+                        
                         
                         <div class="cadastre_link">
                             <p>Não tem uma conta? <a href="#">Cadastre-se</a></p>
                         </div>
+
                     </form>
                 </div>
 
